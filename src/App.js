@@ -35,10 +35,10 @@ function Header() {
   return (
     <div className="header">
       <div className="header_img">
-        <img src="imgs/header.jpg" alt="#"></img>
+        <img src={process.env.PUBLIC_URL + '/imgs/header.jpg'} ></img>
       </div>
       <div>
-        <img className="header_logo" src="imgs/logo.png" alt="#"></img>
+        <img className="header_logo" src={process.env.PUBLIC_URL + '/imgs/logo.png'} ></img>
         <FaBars className="header_icon" size="32" color="white" />
         <p className="header_text">Mercedes-Benz</p>
       </div>
@@ -67,9 +67,9 @@ function ModelSlider() {
     <div>
       <div className="model_slide">
         <div className="slide">
-          <img src="imgs/slide01.jpg" alt="#"></img>
-          <img src="imgs/slide02.jpg" alt="#"></img>
-          <img src="imgs/slide03.jpg" alt="#"></img>
+          <img src={process.env.PUBLIC_URL + '/imgs/slide01.jpg'}  alt="#"></img>
+          <img src={process.env.PUBLIC_URL + '/imgs/slide02.jpg'}  alt="#"></img>
+          <img src={process.env.PUBLIC_URL + '/imgs/slide03.jpg'}  alt="#"></img>
         </div>
       </div>
       <div className="buttons">
@@ -85,7 +85,7 @@ function Goal() {
   return (
     <div className="goal">
       <div className="goal_img">
-        <img src="imgs/goal.jpg" alt="#"></img>
+        <img src={process.env.PUBLIC_URL + '/imgs/goal.jpg'} ></img>
       </div>
       <div className="goal_text">
         <h2>Our goal: to build the world’s most desirable cars.</h2>
@@ -131,7 +131,7 @@ function Studio() {
       <h1>FESTIVE FOREST</h1>
       <div className="studio_content">
         <div>
-          <img src="imgs/studio2.jpg" alt="#"></img>
+          <img src={process.env.PUBLIC_URL + '/imgs/studio2.jpg'} ></img>
           <p>Mercedes-Maybach S 580 4MATIC: WLTP: Verbrauch kombiniert: 11,7 - 10,4 l/100km; CO₂-Emissionen kombiniert: 266 - 236 g/km¹</p>
         </div>
         <div id="studio_content_text">
@@ -139,7 +139,7 @@ function Studio() {
           <p>As the year draws to a close, it’s time to soak up the festive spirit of the season and end 2021 on a high. Maybach also marks its centenary, this year – and what better way to pay homage to the legacy brand than with this unique, immersive celebration? In cooperation with Maybach, Studio Odeonsplatz is transformed into a cool and cozy pop-up lodge, with all the merry trimmings of the season. Fusing forest vibes with a sense of timeless luxury, refined creativity and high quality – reflecting the brand’s values and perspectives – the campaign will run throughout December, building a sense of sweet anticipation across the month and closing out the year in style.</p>
         </div>
       </div>
-      <img id="forest" src="imgs/studio3.jpg" alt="#"></img>
+      <img id="forest" src={process.env.PUBLIC_URL + '/imgs/studio3.jpg'} ></img>
       <div className="studio2">
         <div className="studio_content2">
           <div>
@@ -147,12 +147,12 @@ function Studio() {
             <p>The Maybach Icons of Luxury collection features exquisite luxury items formed from exclusive, sustainable materials and made by expert craftspeople using a unique fusion of time-tested and innovative handcrafting techniques. At the special Icons of Luxury pop-up, browse and purchase selected items from the collection, such as leather jackets, weekender bags, rollerball pens and eyewear.</p>
           </div>
           <div>
-            <img src="imgs/studio4.jpg" alt="#"></img>
+            <img src={process.env.PUBLIC_URL + '/imgs/studio4.jpg'}  alt="#"></img>
           </div>
         </div>
         <div className="studio_content2">
           <div>
-            <img src="imgs/studio5.jpg" alt="#"></img>
+            <img src={process.env.PUBLIC_URL + '/imgs/studio5.jpg'}  alt="#"></img>
           </div>
           <div>
             <h2>FESTIVE FORTUNE</h2>
@@ -168,7 +168,7 @@ function Studio() {
             <h2>Monday to Saturday: 9.00 am – 7.00 pm </h2>
           </div>
           <div>
-            <img src="imgs/studio6.jpg" alt="#"></img>
+            <img src={process.env.PUBLIC_URL + '/imgs/studio6.jpg'}  alt="#"></img>
           </div>
         </div>
       </div>
@@ -184,19 +184,19 @@ function MainNews() {
       <h1>N E W S</h1>
       <div className="news_content">
         <div id="news1">
-          <img src="imgs/news1.jpg" alt="#"></img>
+          <img src={process.env.PUBLIC_URL + '/imgs/news1.jpg'}  alt="#"></img>
           <div className="news_text">
             <h4>The scent of Mercedes-Benz luxury.</h4>
           </div>
         </div>
         <div id="news2">
-          <img src="imgs/news2.jpg" alt="#"></img>
+          <img src={process.env.PUBLIC_URL + '/imgs/news2.jpg'}  alt="#"></img>
           <div className="news_text">
             <h4>Mercedes-EQ Formula E Team facing fresh challenges in Season...</h4>
           </div>
         </div>
         <div id="news3">
-          <img src="imgs/news3.jpg" alt="#"></img>
+          <img src={process.env.PUBLIC_URL + '/imgs/news3.jpg'}  alt="#"></img>
           <div className="news_text">
             <h4>Team lay foundations for Season 8 during Valencia testing</h4>
           </div>
@@ -215,15 +215,15 @@ function SportChannels() {
       <h1>Sport Channels</h1>
       <div className="channel">
         <div>
-          <img src="imgs/sport1.jpg" alt="#"></img>
+          <img src={process.env.PUBLIC_URL + '/imgs/sport1.jpg'}  alt="#"></img>
           <p>Discover the F1 team supporting Lewis Hamilton and Valtteri Bottas. Here, fans of the Silver Arrows can find news, up-to-date reports, race reports, information about the tracks, video footage and much more.</p>
         </div>
         <div>
-          <img src="imgs/sport2.png" alt="#"></img>
+          <img src={process.env.PUBLIC_URL + '/imgs/sport2.png'}  alt="#"></img>
           <p>Here you can find all the important first-hand information about the Mercedes-AMG motorsport team: up-to-date news and reports, driver profiles, race calendars and detailed live data about each race.</p>
         </div>
         <div>
-          <img src="imgs/sport3.jpg" alt="#"></img>
+          <img src={process.env.PUBLIC_URL + '/imgs/sport3.jpg'} alt="#"></img>
           <p>As a founding partner of the Laureus Sport for Good Foundation, Mercedes-Benz supports and fosters social sports projects that improve the lives of underprivileged or sick children and youngsters.</p>
         </div>
       </div>
@@ -265,7 +265,7 @@ function Outer() {
   return (
     <div className="outer">
       <div className="outer_list">
-        <img id="footer_logo" src="imgs/logo.png" alt="#"></img>
+        <img id="footer_logo" src={process.env.PUBLIC_URL + '/imgs/logo.png'} alt="#"></img>
         <ul>
           <li><a href="#">HOME</a></li>
           <li><a href="#">Company</a></li>
