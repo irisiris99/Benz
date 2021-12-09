@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/irisiris99/Benz.git/static/css/main.004fad11.chunk.css",
-    "main.js": "/irisiris99/Benz.git/static/js/main.ffae924e.chunk.js",
-    "main.js.map": "/irisiris99/Benz.git/static/js/main.ffae924e.chunk.js.map",
+    "main.js": "/irisiris99/Benz.git/static/js/main.8ed354a8.chunk.js",
+    "main.js.map": "/irisiris99/Benz.git/static/js/main.8ed354a8.chunk.js.map",
     "runtime-main.js": "/irisiris99/Benz.git/static/js/runtime-main.65b45fb3.js",
     "runtime-main.js.map": "/irisiris99/Benz.git/static/js/runtime-main.65b45fb3.js.map",
     "static/js/2.9f7640e2.chunk.js": "/irisiris99/Benz.git/static/js/2.9f7640e2.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.65b45fb3.js",
     "static/js/2.9f7640e2.chunk.js",
     "static/css/main.004fad11.chunk.css",
-    "static/js/main.ffae924e.chunk.js"
+    "static/js/main.8ed354a8.chunk.js"
   ]
 }
