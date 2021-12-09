@@ -1,38 +1,492 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Cookie&family=Emilys+Candy&family=Frank+Ruhl+Libre&family=Katibeh&family=Lora&family=Nanum+Myeongjo&family=Noto+Serif+JP:wght@200;300&family=Nunito+Sans&family=Peddana&family=Roboto+Mono:wght@200&family=Rubik&family=Shippori+Antique+B1&family=Staatliches&family=Zen+Antique&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+button {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+body {
+  background-color: black;
+  color: white;
+  font-family: "Frank Ruhl Libre", serif;
+  letter-spacing: 1px;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: white;
+  transition: 0.3s ease-in-out;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+li a:hover {
+  color: gray;
+}
+
+/* Active Header */
+.active_header {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0px;
+  z-index: 3;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.header_menu {
+  width: 70%;
+  margin: auto;
+  margin-top: 9%;
+}
+.header_menu ul {
+  position: fixed;
+}
+.header_menu ul li {
+  margin-bottom: 30%;
+}
+.header_menu ul li a {
+  font-size: 32px;
+  font-weight: lighter;
+}
+.header_footer {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: fixed;
+  top: 90%;
+  left: 10%;
+}
+.header_footer div {
+  width: 25%;
+  padding: 0% 4%;
+}
+.header_footer div a {
+  padding: 0px 12px;
+}
+.header_footer div p,
+.header_footer div h5 {
+  font-size: 12px;
+  font-weight: lighter;
+  padding: 3%;
+}
+#copy {
+  position: relative;
+  left: 15%;
+}
+
+/* Header */
+.header_img {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  overflow: hidden;
+}
+.header_icon {
+  position: fixed;
+  top: 5%;
+  right: 5%;
+  z-index: 4;
+  cursor: pointer;
+}
+.header_text {
+  position: fixed;
+  left: 2%;
+  top: 93%;
+  z-index: 2;
+}
+.header_logo {
+  position: fixed;
+  z-index: 2;
+  left: 2%;
+  top: 5%;
+  cursor: pointer;
+  transition: 0.2s ease-in;
+}
+.header_logo:hover {
+  opacity: 0.7;
+}
+
+/* NEWS */
+.head_news {
+  width: 70%;
+  margin-top: 30%;
+  margin-bottom: 5%;
+  padding: 1.5%;
+  background-color: #202020;
+  display: flex;
+  align-items: center;
+}
+.head_news div {
+  padding: 0.5% 3%;
+}
+.head_news .news_title {
+  border-right: 1px solid white;
+}
+.head_news .news_content {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  margin-left: 1%;
+  font-weight: bold;
+}
+.head_news .news_icon {
+  cursor: pointer;
+  padding: 0.5% 1%;
+}
+
+/* Model Slider */
+.model_slide {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.model_slide .slide {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.model_slide .slide img {
+  width: 80%;
+  height: 70%;
+  margin: 0% 1%;
+}
+
+/* Buttons */
+.buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 1% 0%;
+  margin-bottom: 10%;
+}
+.buttons button {
+  width: 15%;
+  background: none;
+  border: 1px double white;
+  padding: 0.5%;
+  font-size: 18px;
+  transition: 0.3s ease-in;
+  cursor: pointer;
+}
+.buttons button:hover {
+  background: #181818;
+}
+.button {
+  font-size: 26px;
+  cursor: pointer;
+  transition: 0.3s ease-in;
+}
+#buttonRight:hover {
+  transform: translateX(10px);
+}
+#buttonLeft:hover {
+  transform: translateX(-10px);
+}
+
+/* Goal */
+.goal {
+  width: 100%;
+  background-color: #181818;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+.goal > div {
+  padding: 5% 1%;
+}
+.goal_img {
+  width: 40%;
+}
+.goal_img img {
+  width: 100%;
+}
+.goal_text {
+  width: 30%;
+}
+.goal_text p {
+  font-size: 1vw;
+  opacity: 0.8;
+  line-height: 24px;
+}
+.goal_text h2 {
+  font-size: 1.3vw;
+  padding: 5% 0%;
+  opacity: 0.9;
+}
+
+/* Videos */
+.highlight {
+  width: 100%;
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  z-index: 1;
+}
+.highlight h2 {
+  color: #181818;
+}
+.highlight_videos {
+  width: 100%;
+  color: black;
+  padding-top: 10%;
+}
+.highlight_videos > h2 {
+  position: relative;
+  left: 20%;
+  padding: 2% 0%;
+}
+.highlight_videos .video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5% 0%;
+  position: relative;
+  left: 10%;
+}
+.highlight_videos .video > div {
+  width: 35%;
+}
+.highlight_videos .video p {
+  padding: 3% 0%;
+}
+.highlight_videos .video div iframe {
+  width: 32vw;
+  height: 22vw;
+}
+
+/* Studio */
+.studio {
+  width: 100%;
+  background-color: #181818;
+  text-align: center;
+}
+.studio h4 {
+  font-size: 20px;
+  padding: 5%;
+}
+.studio_text {
+  width: 30%;
+  margin: auto;
+}
+.studio_text p {
+  padding: 3%;
+}
+.studio h1 {
+  font-size: 40px;
+  font-weight: lighter;
+  padding: 5%;
+}
+.studio_content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  padding: 5% 0%;
+}
+.studio_content p {
+  font-size: 1vw;
+}
+.studio_content div {
+  width: 35%;
+  padding: 0% 2%;
+}
+.studio_content > div > img {
+  width: 100%;
+}
+#studio_content_text {
+  width: 30%;
+}
+#studio_content_text > p {
+  padding-bottom: 3%;
+}
+#forest {
+  width: 100%;
+}
+
+/* Studio2 */
+.studio2 {
+  width: 90%;
+  margin: auto;
+}
+.studio_content2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  padding-bottom: 2%;
+}
+.studio_content2 h2 {
+  padding: 4% 0%;
+}
+.studio_content2 div {
+  width: 40%;
+  padding: 3%;
+}
+.studio_content2 div img {
+  border-radius: 100%;
+  cursor: pointer;
+  transition: 0.3s ease-in;
+}
+.studio_content2 div img:hover {
+  transform: scale(1.1);
+}
+
+/* Section4 */
+.news {
+  width: 100%;
+  padding-bottom: 16%;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+.news h1 {
+  font-weight: 300;
+  padding-top: 3%;
+  opacity: 0.8;
+}
+.news_content {
+  display: flex;
+  justify-content: center;
+}
+.news_content div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.2s ease-in;
+  margin: 0% 1%;
+  overflow: hidden;
+}
+.news_content div img {
+  width: 100%;
+  transition: 0.2s ease-in;
+}
+.news_content div img:hover {
+  transform: scale(1.05);
+}
+.news_text {
+  width: 100%;
+  height: 50px;
+  background-color: black;
+}
+#news1,
+#news3 {
+  width: 30%;
+}
+#news2 {
+  width: 35%;
+  position: relative;
+  top: 100px;
+}
+
+/* Section5 */
+.sport_channels {
+  width: 100%;
+  height: 500px;
+}
+.sport_channels h1 {
+  text-align: center;
+  color: #181818;
+  padding-top: 2%;
+}
+.sport_channels .channel {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sport_channels .channel div {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1% 0%;
+}
+.sport_channels .channel div img {
+  width: 80%;
+}
+.sport_channels div p {
+  width: 70%;
+  color: #181818;
+}
+
+/* Footer */
+.footer {
+  width: 90%;
+  margin: auto;
+  font-size: 14px;
+  padding: 2% 0%;
+}
+.footer div {
+  padding-bottom: 2%;
+}
+.nobr {
+  display: flex;
+  padding: 1% 0%;
+}
+.nobr p {
+  padding-left: 5px;
+}
+
+/* Footer 2 */
+.outer {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 3% 0%;
+  font-size: 14px;
+}
+.outer_list {
+  width: 30%;
+  display: flex;
+  align-items: center;
+}
+.outer_list ul {
+  padding: 0% 10%;
+}
+.outer_list ul li {
+  padding: 4px;
+}
+#footer_logo {
+  height: 60px;
+}
+.outer_icons {
+  width: 30%;
+}
+.outer_icons .outer_icon {
+  padding: 1%;
+  font-size: 36px;
+  transition: 0.3s ease-in-out;
+}
+.outer_icon:hover {
+  color: royalblue;
+  cursor: pointer;
 }
