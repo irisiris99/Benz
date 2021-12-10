@@ -267,10 +267,10 @@ function Outer() {
       <div className="outer_list">
         <img id="footer_logo" src={process.env.PUBLIC_URL + '/imgs/logo.png'} alt="#"></img>
         <ul>
-          <li><a href="#">HOME</a></li>
-          <li><a href="#">Company</a></li>
-          <li><a href="#">Design</a></li>
-          <li><a href="#">Inoovation</a></li>
+          <li><a href="">HOME</a></li>
+          <li><a href="">Company</a></li>
+          <li><a href="">Design</a></li>
+          <li><a href="">Inoovation</a></li>
         </ul>
         <ul>
           <li><a href="#">Exhibitions</a></li>
