@@ -31,7 +31,7 @@ function App() {
     );
 }
 
-class Button extends Component {
+class HeadBtn extends Component {
   toggleBtn = () => {
     const menu = document.querySelector('.active_header');
     menu.classList.toggle('active');
@@ -41,6 +41,21 @@ class Button extends Component {
     return (
       <div>
         <FaBars className="header_icon" size="32" color="white" onClick={this.toggleBtn}/>
+      </div>
+    );
+  }
+}
+
+class NewsBtn extends Component {
+  toggleBtn = () => {
+    const menu = document.querySelector('#toggle_news');
+    menu.classList.toggle('active');
+  }
+
+  render() {
+    return (
+      <div className="news_icon">
+        <FaAngleDown size="25" color="white" onClick={this.toggleBtn}/>
       </div>
     );
   }
@@ -98,7 +113,7 @@ function Header() {
       </div>
       <div>
         <img className="header_logo" src={process.env.PUBLIC_URL + '/imgs/logo.png'} ></img>
-        <Button />
+        <HeadBtn />
         <p className="header_text">Mercedes-Benz</p>
       </div>
     </div>
@@ -107,15 +122,49 @@ function Header() {
 
 function HeadNews() {
   return (
-    <div className="head_news">
-      <div className="news_title">
-        <h3>NEWS</h3>
+    <div>
+      <div id="head_news">
+        <div className="news_title">
+          <h3>NEWS</h3>
+        </div>
+        <div className="news_content">
+          <p>Mercedes-EQ Formula E Team facing fresh challenges in Season 8</p>
+        </div>
+        <NewsBtn />
       </div>
-      <div className="news_content">
-        <p> Mercedes-EQ Formula E Team facing fresh challenges in Season 8</p>
-      </div>
-      <div className="news_icon">
-        <FaAngleDown size="25" />
+      <div id="toggle_news">
+        <div className="head_news">
+          <div className="news_title">
+            <h3>NEWS</h3>
+          </div>
+          <div className="news_content">
+            <p>Mercedes-Benz Collaborates With Proenza Schouler.</p>
+          </div>
+        </div>
+        <div className="head_news">
+          <div className="news_title">
+            <h3>NEWS</h3>
+          </div>
+          <div className="news_content">
+            <p>Studio Odeonsplatz by Mercedes-Benz</p>
+          </div>
+        </div>
+        <div className="head_news">
+          <div className="news_title">
+            <h3>NEWS</h3>
+          </div>
+          <div className="news_content">
+            <p>SK Gaming runs, Mercedes-Benz doubles.</p>
+          </div>
+        </div>
+        <div className="head_news">
+          <div className="news_title">
+            <h3>NEWS</h3>
+          </div>
+          <div className="news_content">
+            <p>League of Legends World Champopmship Ring.</p>
+          </div>
+        </div>
       </div>
     </div>
   )
@@ -190,7 +239,7 @@ function HighLight() {
 function Studio() {
   return (
     <div className="studio">
-      <h4>ABOUT STUDIO ODEONSPLATZ</h4>
+      <h2>ABOUT STUDIO ODEONSPLATZ</h2>
       <div className="studio_text">
         <p>Studio Odeonsplatz by Mercedes-Benz is an innovative concept where creativity, digitalization, art and content seamlessly merge into a single, unique brand experience.</p>
         <p>Spread across a lavish 400 sqm, Studio Odeonsplatz in the heart of Munich is an integrated physical and digital platform for our guests to network, talk to each other, and get inspiration.</p>
@@ -221,7 +270,7 @@ function Studio() {
           </div>
         </div>
         <div className="studio_content2">
-          <div>
+          <div id="fortune">
             <img src={process.env.PUBLIC_URL + '/imgs/studio5.jpg'}  alt="#"></img>
           </div>
           <div>
