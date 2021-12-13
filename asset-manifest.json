@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/Benz/static/css/main.e2ab3f42.chunk.css",
-    "main.js": "/Benz/static/js/main.f81cb94c.chunk.js",
-    "main.js.map": "/Benz/static/js/main.f81cb94c.chunk.js.map",
+    "main.css": "/Benz/static/css/main.7a75bf62.chunk.css",
+    "main.js": "/Benz/static/js/main.cf2ad66e.chunk.js",
+    "main.js.map": "/Benz/static/js/main.cf2ad66e.chunk.js.map",
     "runtime-main.js": "/Benz/static/js/runtime-main.28723c3b.js",
     "runtime-main.js.map": "/Benz/static/js/runtime-main.28723c3b.js.map",
     "static/js/2.662b3fd5.chunk.js": "/Benz/static/js/2.662b3fd5.chunk.js",
@@ -10,13 +10,13 @@
     "static/js/3.3c12d757.chunk.js": "/Benz/static/js/3.3c12d757.chunk.js",
     "static/js/3.3c12d757.chunk.js.map": "/Benz/static/js/3.3c12d757.chunk.js.map",
     "index.html": "/Benz/index.html",
-    "static/css/main.e2ab3f42.chunk.css.map": "/Benz/static/css/main.e2ab3f42.chunk.css.map",
+    "static/css/main.7a75bf62.chunk.css.map": "/Benz/static/css/main.7a75bf62.chunk.css.map",
     "static/js/2.662b3fd5.chunk.js.LICENSE.txt": "/Benz/static/js/2.662b3fd5.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.28723c3b.js",
     "static/js/2.662b3fd5.chunk.js",
-    "static/css/main.e2ab3f42.chunk.css",
-    "static/js/main.f81cb94c.chunk.js"
+    "static/css/main.7a75bf62.chunk.css",
+    "static/js/main.cf2ad66e.chunk.js"
   ]
 }
