@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './App.css';
-import { FaBars, FaLongArrowAltLeft, FaLongArrowAltRight, FaAngleDown, FaChargingStation, FaEnvira, FaFacebook, FaTwitter, FaYoutube, FaInstagram, FaLinkedinIn, } from "react-icons/fa";
+import { FaBars, FaAngleDown, FaChargingStation, FaEnvira, FaFacebook, FaTwitter, FaYoutube, FaInstagram, FaLinkedinIn, } from "react-icons/fa";
+
 
 function App() {
-
     return (
       <div className="App">
         <ActiveHeader />
@@ -31,6 +31,65 @@ function App() {
     );
 }
 
+class Button extends Component {
+  toggleBtn = () => {
+    const menu = document.querySelector('.active_header');
+    menu.classList.toggle('active');
+  }
+
+  render() {
+    return (
+      <div>
+        <FaBars className="header_icon" size="32" color="white" onClick={this.toggleBtn}/>
+      </div>
+    );
+  }
+}
+
+class NextBtn extends Component {
+  NextBtnClick = () => {
+    const avtr = document.querySelector('#avtr');
+    const s680 = document.querySelector('#s680');
+    const s580 = document.querySelector('#s580');
+    const eqs580 = document.querySelector('#eqs580');
+    const c300 = document.querySelector('#c300');
+    const amg = document.querySelector('#amg');
+    const slide = document.querySelector('.model_slide');
+
+    s680.addEventListener('click', () => {
+      slide.style.transform = 'translateX(-100vw)';
+    })
+    s580.addEventListener('click', () => {
+      slide.style.transform = 'translateX(-200vw)';
+    })
+    eqs580.addEventListener('click', () => {
+      slide.style.transform = 'translateX(-300vw)';
+    })
+    c300.addEventListener('click', () => {
+      slide.style.transform = 'translateX(-400vw)';
+    })
+    amg.addEventListener('click', () => {
+      slide.style.transform = 'translateX(-500vw)';
+    })
+    avtr.addEventListener('click', () => {
+      slide.style.transform = 'translateX(0vw)';
+    })
+  }
+
+  render() {
+    return (
+      <div>
+        <button id="avtr" className="button" onClick={this.NextBtnClick}>Vision AVTR</button>
+        <button id="s680" className="button" onClick={this.NextBtnClick}>S680 GUARD</button>
+        <button id="s580" className="button" onClick={this.NextBtnClick}>Maybach S580</button>
+        <button id="eqs580" className="button" onClick={this.NextBtnClick}>EQS580 4Matic</button>
+        <button id="c300" className="button" onClick={this.NextBtnClick}>C300 Sedan</button>
+        <button id="amg" className="button" onClick={this.NextBtnClick}>AMG GT S 63</button>
+      </div>
+    )
+  }
+}
+
 function Header() {
   return (
     <div className="header">
@@ -39,7 +98,7 @@ function Header() {
       </div>
       <div>
         <img className="header_logo" src={process.env.PUBLIC_URL + '/imgs/logo.png'} ></img>
-        <FaBars className="header_icon" size="32" color="white" />
+        <Button />
         <p className="header_text">Mercedes-Benz</p>
       </div>
     </div>
@@ -64,18 +123,29 @@ function HeadNews() {
 
 function ModelSlider() {
   return (
-    <div>
+    <div id="model">
       <div className="model_slide">
-        <div className="slide">
-          <img src={process.env.PUBLIC_URL + '/imgs/slide01.jpg'}  alt="#"></img>
-          <img src={process.env.PUBLIC_URL + '/imgs/slide02.jpg'}  alt="#"></img>
-          <img src={process.env.PUBLIC_URL + '/imgs/slide03.jpg'}  alt="#"></img>
-        </div>
+          <div className="slide_img">
+            <img src={process.env.PUBLIC_URL + '/imgs/slide_avtr.jpg'}  alt="#"></img>
+          </div>
+          <div className="slide_img">
+            <img src={process.env.PUBLIC_URL + '/imgs/slide_S680.jpg'}  alt="#"></img>
+          </div>
+          <div className="slide_img">
+            <img src={process.env.PUBLIC_URL + '/imgs/slide_S580.jpg'}  alt="#"></img>
+          </div>
+          <div className="slide_img">
+            <img src={process.env.PUBLIC_URL + '/imgs/slide_EQS580.jpg'}  alt="#"></img>
+          </div>
+          <div className="slide_img">
+            <img src={process.env.PUBLIC_URL + '/imgs/slide_C300.jpg'}  alt="#"></img>
+          </div>
+          <div className="slide_img">
+            <img src={process.env.PUBLIC_URL + '/imgs/slide_AMG.jpg'}  alt="#"></img>
+          </div>
       </div>
       <div className="buttons">
-        <FaLongArrowAltLeft id="buttonLeft" className="button" />
-        <button>S680 GUARD</button>
-        <FaLongArrowAltRight id="buttonRight" className="button" />
+        <NextBtn />
       </div>
     </div>
   )

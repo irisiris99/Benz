@@ -40,6 +40,11 @@ li a:hover {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  transition: 0.3s ease-in;
+}
+.active_header.active {
+  display: block;
+  transition: 0.3s ease-in;
 }
 .header_menu {
   width: 70%;
@@ -148,56 +153,50 @@ li a:hover {
 }
 
 /* Model Slider */
+#model {
+  overflow: hidden;
+}
 .model_slide {
-  width: 100%;
+  width: 600vw;
   margin: auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
+  transition: 0.1s ease-in;
 }
-.model_slide .slide {
-  width: 100%;
+.slide_img {
+  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.model_slide .slide img {
-  width: 80%;
-  height: 70%;
-  margin: 0% 1%;
 }
 
 /* Buttons */
 .buttons {
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   padding: 1% 0%;
   margin-bottom: 10%;
 }
+.buttons div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .buttons button {
-  width: 15%;
+  width: 180px;
   background: none;
   border: 1px double white;
-  padding: 0.5%;
-  font-size: 18px;
+  padding: 1%;
+  margin: 0% 1%;
+  font-size: 16px;
   transition: 0.3s ease-in;
   cursor: pointer;
 }
 .buttons button:hover {
   background: #181818;
-}
-.button {
-  font-size: 26px;
-  cursor: pointer;
-  transition: 0.3s ease-in;
-}
-#buttonRight:hover {
-  transform: translateX(10px);
-}
-#buttonLeft:hover {
-  transform: translateX(-10px);
 }
 
 /* Goal */
