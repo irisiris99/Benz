@@ -305,19 +305,19 @@ function MainNews() {
         <div id="news1">
           <img src={process.env.PUBLIC_URL + '/imgs/news1.jpg'}  alt="#"></img>
           <div className="news_text">
-            <h4>The scent of Mercedes-Benz luxury.</h4>
+            <p>The scent of Mercedes-Benz luxury.</p>
           </div>
         </div>
         <div id="news2">
           <img src={process.env.PUBLIC_URL + '/imgs/news2.jpg'}  alt="#"></img>
           <div className="news_text">
-            <h4>Mercedes-EQ Formula E Team facing fresh challenges in Season...</h4>
+            <p>Mercedes-EQ Formula E Team facing fresh challenges in Season...</p>
           </div>
         </div>
         <div id="news3">
           <img src={process.env.PUBLIC_URL + '/imgs/news3.jpg'}  alt="#"></img>
           <div className="news_text">
-            <h4>Team lay foundations for Season 8 during Valencia testing</h4>
+            <p>Team lay foundations for Season 8 during Valencia testing</p>
           </div>
         </div>
       </div>

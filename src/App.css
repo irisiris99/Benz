@@ -445,6 +445,9 @@ li a:hover {
   height: 50px;
   background-color: black;
 }
+.news_text p {
+  font-size: 14px;
+}
 #news1,
 #news3 {
   width: 22%;
