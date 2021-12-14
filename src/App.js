@@ -22,9 +22,9 @@ function App() {
 
         <MainNews />
 
-        <SportChannels />
-
         <Footer />
+
+        <SportChannels />
 
         <Outer />
       </div>
@@ -72,19 +72,19 @@ class NextBtn extends Component {
     const slide = document.querySelector('.model_slide');
 
     s680.addEventListener('click', () => {
-      slide.style.transform = 'translateX(-100vw)';
+      slide.style.transform = 'translateX(-82.75vw)';
     })
     s580.addEventListener('click', () => {
-      slide.style.transform = 'translateX(-200vw)';
+      slide.style.transform = 'translateX(-165.5vw)';
     })
     eqs580.addEventListener('click', () => {
-      slide.style.transform = 'translateX(-300vw)';
-    })
+      slide.style.transform = 'translateX(-248vw)';
+    })  
     c300.addEventListener('click', () => {
-      slide.style.transform = 'translateX(-400vw)';
+      slide.style.transform = 'translateX(-330.75vw)';
     })
     amg.addEventListener('click', () => {
-      slide.style.transform = 'translateX(-500vw)';
+      slide.style.transform = 'translateX(-413.5vw)';
     })
     avtr.addEventListener('click', () => {
       slide.style.transform = 'translateX(0vw)';
@@ -94,12 +94,12 @@ class NextBtn extends Component {
   render() {
     return (
       <div>
-        <button id="avtr" className="button" onClick={this.NextBtnClick}>Vision AVTR</button>
-        <button id="s680" className="button" onClick={this.NextBtnClick}>S680 GUARD</button>
-        <button id="s580" className="button" onClick={this.NextBtnClick}>Maybach S580</button>
-        <button id="eqs580" className="button" onClick={this.NextBtnClick}>EQS580 4Matic</button>
-        <button id="c300" className="button" onClick={this.NextBtnClick}>C300 Sedan</button>
-        <button id="amg" className="button" onClick={this.NextBtnClick}>AMG GT S 63</button>
+        <button id="avtr" className="button" onClick={this.NextBtnClick}>1</button>
+        <button id="s680" className="button" onClick={this.NextBtnClick}>2</button>
+        <button id="s580" className="button" onClick={this.NextBtnClick}>3</button>
+        <button id="eqs580" className="button" onClick={this.NextBtnClick}>4</button>
+        <button id="c300" className="button" onClick={this.NextBtnClick}>5</button>
+        <button id="amg" className="button" onClick={this.NextBtnClick}>6</button>
       </div>
     )
   }
@@ -112,7 +112,7 @@ function Header() {
         <img src={process.env.PUBLIC_URL + '/imgs/header.jpg'} ></img>
       </div>
       <div>
-        <img className="header_logo" src={process.env.PUBLIC_URL + '/imgs/logo.png'} ></img>
+        <a href="index.html"><img className="header_logo" src={process.env.PUBLIC_URL + '/imgs/logo.png'} /></a>
         <HeadBtn />
         <p className="header_text">Mercedes-Benz</p>
       </div>
@@ -175,22 +175,28 @@ function ModelSlider() {
     <div id="model">
       <div className="model_slide">
           <div className="slide_img">
-            <img src={process.env.PUBLIC_URL + '/imgs/slide_avtr.jpg'}  alt="#"></img>
+            <iframe width="1547.77" height="825.47" src="https://www.youtube.com/embed/B9lmtMAr56k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
           <div className="slide_img">
-            <img src={process.env.PUBLIC_URL + '/imgs/slide_S680.jpg'}  alt="#"></img>
+            <iframe width="1547.77" height="825.47" src="https://www.youtube.com/embed/hk8GVanoOzI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
           <div className="slide_img">
-            <img src={process.env.PUBLIC_URL + '/imgs/slide_S580.jpg'}  alt="#"></img>
+            <iframe width="1547.77" height="825.47" src="https://www.youtube.com/embed/rnCnAOgBRKY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
           <div className="slide_img">
-            <img src={process.env.PUBLIC_URL + '/imgs/slide_EQS580.jpg'}  alt="#"></img>
+            <iframe width="1547.77" height="825.47" src="https://www.youtube.com/embed/Ch6g9VwikZY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
           <div className="slide_img">
-            <img src={process.env.PUBLIC_URL + '/imgs/slide_C300.jpg'}  alt="#"></img>
+            <iframe width="1547.77" height="825.47" src="https://www.youtube.com/embed/Np8uwCmD92c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
           <div className="slide_img">
-            <img src={process.env.PUBLIC_URL + '/imgs/slide_AMG.jpg'}  alt="#"></img>
+            <iframe width="1547.77" height="825.47" src="https://www.youtube.com/embed/35h-neqDuxE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div className="slide_img">
+            <iframe width="1547.77" height="825.47" src="https://www.youtube.com/embed/kRHwglTFtd4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div className="slide_img">
+            <iframe width="1547.77" height="825.47" src="https://www.youtube.com/embed/hk8GVanoOzI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
       </div>
       <div className="buttons">
@@ -202,13 +208,16 @@ function ModelSlider() {
 
 function Goal() {
   return (
-    <div className="goal">
-      <div className="goal_img">
-        <img src={process.env.PUBLIC_URL + '/imgs/goal.jpg'} ></img>
+    <div className="about_us" style={{
+      backgroundImage: `url(${process.env.PUBLIC_URL + '/imgs/background5.jpg'})`
+    }}>
+      <h1>―――――　WHO WE ARE</h1>
+      <div>
+        <h3>Mercedes-Benz AG is continually expanding its worldwide production network with around 35 production sites on four continents, while gearing itself to meet the requirements of electric mobility. At the same time, the company is constructing and extending its global battery production network on three continents.</h3>
       </div>
-      <div className="goal_text">
-        <h2>Our goal: to build the world’s most desirable cars.</h2>
-        <p>The Mercedes-Benz strategy is made up of six pillars. At its heart is the transformation of the company to become the number 1 for electric mobility and all-encompassing digitalisation. At the same time, there is a clear focus on the structural improvement of profitability, with sustainability as a guiding principle. The basis for the success of our new strategy is provided by our highly qualified and motivated team.</p>
+      <div>
+        <p>Our goal: to build the world’s most desirable cars.</p>
+        <p>“First Move the World” – that is the Purpose of Mercedes-Benz Cars</p>
       </div>
     </div>
   )
@@ -219,16 +228,16 @@ function HighLight() {
     <div className="highlight" style={{
       backgroundImage: `url(${process.env.PUBLIC_URL + '/imgs/background1.jpg'})`
     }}>
-      <div className="highlight_videos">
-        <h2>HighLight Videos</h2>
-        <div class="video">
+      <div className="product">
+        <h2>New Product : The New EQS 2022</h2>
+        <div class="new_eqs">
           <div>
-            <iframe src="https://www.youtube.com/embed/UB2nfX8x2O4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <p>Mercedes-AMG EQS 53 4MATIC+ World Premiere</p>
+            <img src={process.env.PUBLIC_URL + '/imgs/new1.jpg' } />
+            <p>2022 Mercedes-Benz EQS 580 4Matic First Look</p>
           </div>
           <div>
-            <iframe src="https://www.youtube.com/embed/Ra__OWuOU1M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <p>Best of: Mercedes-Benz at the IAA MOBILITY 2021</p>
+            <img src={process.env.PUBLIC_URL + '/imgs/new2.jpg' } />
+            <p>2022 Mercedes EQS futuristic interior</p>
           </div>
         </div>
       </div>
@@ -278,7 +287,7 @@ function Studio() {
             <p>DREAMS COME TRUE Get into the holiday mood with our special Instagram holiday lottery! Hiding behind each door is a seasonal surprise from our friends and partners, who joined us over the year – every day in December there's a chance to win. Head over to <a href="https://www.instagram.com/accounts/login/">@STUDIO.ODEONSPLATZ</a> now to take part!</p>
           </div>
         </div>
-        <div className="studio_content2">
+        <div id="last_content" className="studio_content2">
           <div>
             <h2>48°08'33.4"N 11°34'38.0"E</h2>
             <p>Studio Odeonsplatz</p>
@@ -297,30 +306,61 @@ function Studio() {
 
 function MainNews() {
   return (
-    <div className="news" style={{
-      backgroundImage: `url(${process.env.PUBLIC_URL + '/imgs/background2.jpg'})`
-    }}>
-      <h1>N E W S</h1>
-      <div className="news_content">
-        <div id="news1">
-          <img src={process.env.PUBLIC_URL + '/imgs/news1.jpg'}  alt="#"></img>
-          <div className="news_text">
-            <p>The scent of Mercedes-Benz luxury.</p>
-          </div>
+    <div className="news">
+      <h1>Live News</h1>
+      <div className="news_header">
+        <div>
+          <img src={process.env.PUBLIC_URL + '/imgs/news1.jpg'}  alt="#" />
+          <h4>SK Gaming runs, Mercedes-Benz doubles.</h4>
         </div>
-        <div id="news2">
-          <img src={process.env.PUBLIC_URL + '/imgs/news2.jpg'}  alt="#"></img>
-          <div className="news_text">
-            <p>Mercedes-EQ Formula E Team facing fresh challenges in Season...</p>
-          </div>
-        </div>
-        <div id="news3">
-          <img src={process.env.PUBLIC_URL + '/imgs/news3.jpg'}  alt="#"></img>
-          <div className="news_text">
-            <p>Team lay foundations for Season 8 during Valencia testing</p>
-          </div>
+        <div>
+          <img src={process.env.PUBLIC_URL + '/imgs/news2.jpg'}  alt="#" />
+          <h4>More equal opportunities and inclusion in Esports</h4>
         </div>
       </div>
+      <div className="news_content">
+        <div>
+          <img src={process.env.PUBLIC_URL + '/imgs/news3.jpg'}  alt="#" />
+          <p>What Impact Does High Altitude Have on a...</p>
+        </div>
+        <div>
+          <img src={process.env.PUBLIC_URL + '/imgs/news4.jpg'}  alt="#" />
+          <p>Mercedes-EQ and SK Gaming launch Projec...</p>
+        </div>
+        <div>
+          <img src={process.env.PUBLIC_URL + '/imgs/news5.jpg'}  alt="#" />
+          <p>Mercedes-Benz SL glamour at the Pebble B...</p>
+        </div>
+      </div>
+      <div className="news_content">
+        <div>
+          <img src={process.env.PUBLIC_URL + '/imgs/news6.jpg'}  alt="#" />
+          <p>Laureus Sport Good: Everyone wins.</p>
+        </div>
+        <div>
+          <img src={process.env.PUBLIC_URL + '/imgs/news7.jpg'}  alt="#" />
+          <p>Interview with Sara Shakeel.</p>
+        </div>
+        <div>
+          <img src={process.env.PUBLIC_URL + '/imgs/news8.jpg'}  alt="#" />
+          <p>30 years of Mercedes-Benz W 140: The ...</p>
+        </div>
+      </div>
+      <div className="news_content">
+        <div>
+          <img src={process.env.PUBLIC_URL + '/imgs/news9.jpg'}  alt="#" />
+          <p>The New EQS Mercedes-EQ and its...</p>
+        </div>
+        <div>
+          <img src={process.env.PUBLIC_URL + '/imgs/news10.jpg'}  alt="#" />
+          <p>She's Mercedes:"we should not se our...</p>
+        </div>
+        <div>
+          <img src={process.env.PUBLIC_URL + '/imgs/news11.jpg'}  alt="#" />
+          <p>Mercedes-Benz AG: Purpose.</p>
+        </div>
+      </div>
+      
     </div>
   )
 }
@@ -419,7 +459,7 @@ function ActiveHeader() {
     }}>
       <div className="header_menu">
         <ul>
-          <li><a href="#">Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="#">Goal</a></li>
           <li><a href="#">HighLight</a></li>
           <li><a href="#">News</a></li>
