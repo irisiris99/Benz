@@ -72,22 +72,22 @@ class NextBtn extends Component {
     const slide = document.querySelector('.model_slide');
 
     s680.addEventListener('click', () => {
-      slide.style.transform = 'translateX(-82.75vw)';
+      slide.style.transform = 'translateX(-16.1%)';
     })
     s580.addEventListener('click', () => {
-      slide.style.transform = 'translateX(-165.5vw)';
+      slide.style.transform = 'translateX(-32.2%)';
     })
     eqs580.addEventListener('click', () => {
-      slide.style.transform = 'translateX(-248vw)';
+      slide.style.transform = 'translateX(-48.3%)';
     })  
     c300.addEventListener('click', () => {
-      slide.style.transform = 'translateX(-330.75vw)';
+      slide.style.transform = 'translateX(-64.4%)';
     })
     amg.addEventListener('click', () => {
-      slide.style.transform = 'translateX(-413.5vw)';
+      slide.style.transform = 'translateX(-80.5%)';
     })
     avtr.addEventListener('click', () => {
-      slide.style.transform = 'translateX(0vw)';
+      slide.style.transform = 'translateX(0%)';
     })
   }
 
@@ -315,7 +315,7 @@ function MainNews() {
         </div>
         <div>
           <img src={process.env.PUBLIC_URL + '/imgs/news2.jpg'}  alt="#" />
-          <h4>More equal opportunities and inclusion in Esports</h4>
+          <h4>More equal opportunities and inclusion..</h4>
         </div>
       </div>
       <div className="news_content">
@@ -343,7 +343,7 @@ function MainNews() {
         </div>
         <div>
           <img src={process.env.PUBLIC_URL + '/imgs/news8.jpg'}  alt="#" />
-          <p>30 years of Mercedes-Benz W 140: The ...</p>
+          <p>30 years of Mercedes-Benz W 140...</p>
         </div>
       </div>
       <div className="news_content">
@@ -360,7 +360,48 @@ function MainNews() {
           <p>Mercedes-Benz AG: Purpose.</p>
         </div>
       </div>
-      
+      <div className="news_content">
+        <div>
+          <img src={process.env.PUBLIC_URL + '/imgs/news12.jpg'}  alt="#" />
+          <p>Mercedes-Benz C-Class: Learning to let go</p>
+        </div>
+        <div>
+          <img src={process.env.PUBLIC_URL + '/imgs/news13.jpg'}  alt="#" />
+          <p>Team achieves FIA Three-Star Environment...</p>
+        </div>
+        <div>
+          <img src={process.env.PUBLIC_URL + '/imgs/news14.jpg'}  alt="#" />
+          <p>On the road with Mercedes-Benz Dream Cars</p>
+        </div>
+      </div>
+      <div className="news_content">
+        <div>
+          <img src={process.env.PUBLIC_URL + '/imgs/news15.jpg'}  alt="#" />
+          <p>Mercedes Launches ‘Accelerate 25’ Diver...</p>
+        </div>
+        <div>
+          <img src={process.env.PUBLIC_URL + '/imgs/news16.jpg'}  alt="#" />
+          <p>The Mercedes-AMG GT Roadster.</p>
+        </div>
+        <div>
+          <img src={process.env.PUBLIC_URL + '/imgs/news17.jpg'}  alt="#" />
+          <p>The Mercedes-AMG GT Coupe.</p>
+        </div>
+      </div>
+      <div id="last_child" className="news_content">
+        <div>
+          <img src={process.env.PUBLIC_URL + '/imgs/news18.jpg'}  alt="#" />
+          <p>Dare to dream with Mercedes-Benz dream cars.</p>
+        </div>
+        <div>
+          <img src={process.env.PUBLIC_URL + '/imgs/news19.jpg'}  alt="#" />
+          <p>Our call for diversity, standing against racism...</p>
+        </div>
+        <div>
+          <img src={process.env.PUBLIC_URL + '/imgs/news20.jpg'}  alt="#" />
+          <p>Mexico 2020:A character-building weekend.</p>
+        </div>
+      </div>
     </div>
   )
 }

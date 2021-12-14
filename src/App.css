@@ -207,7 +207,7 @@ li a:hover {
   transition: 0.1s ease-in;
 }
 .slide_img {
-  min-width: 16.1%;
+  width: 16.1%;
   margin: auto;
   display: flex;
   justify-content: center;
@@ -247,6 +247,8 @@ li a:hover {
 .about_us {
   width: 100%;
   background-color: #181818;
+  background-size: cover;
+  background-position: right;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -296,12 +298,12 @@ li a:hover {
 .product {
   width: 100%;
   color: black;
-  padding-top: 10%;
+  padding-top: 9%;
 }
 .product > h2 {
   position: relative;
   left: 20%;
-  padding: 2% 0%;
+  padding-bottom: 5%;
 }
 .product .new_eqs {
   width: 100%;
@@ -417,8 +419,7 @@ li a:hover {
 
 /* Section4 */
 .news {
-  width: 70%;
-  height: 1800px;
+  width: 80%;
   text-align: center;
   position: relative;
   top: -100px;
@@ -437,6 +438,7 @@ li a:hover {
   padding: 5% 0%;
 }
 .news_header div {
+  width: 38%;
   padding: 0% 0.1%;
   cursor: pointer;
 }
@@ -449,10 +451,18 @@ li a:hover {
   align-items: center;
 }
 .news_content div {
+  width: 25.4%;
   padding: 2% 0.25%;
 }
+.news_content div img {
+  width: 100%;
+}
 .news_content p {
+  min-height: 30px;
   font-size: 13px;
+}
+#last_child {
+  padding-bottom: 10%;
 }
 
 /* Section5 */
