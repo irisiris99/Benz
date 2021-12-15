@@ -503,9 +503,9 @@ function ActiveHeader() {
       <div className="header_menu">
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="#">Goal</a></li>
-          <li><a href="#">HighLight</a></li>
-          <li><a href="#">News</a></li>
+          <li><a href="#">New Product</a></li>
+          <li><a href="#">Odeonsplatz</a></li>
+          <li><a href="#">Live News</a></li>
           <li><a href="#">Sport</a></li>
         </ul>
       </div>

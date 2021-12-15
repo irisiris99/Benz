@@ -22,11 +22,12 @@ ul {
 a {
   text-decoration: none;
   color: white;
-  transition: 0.3s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
 li a:hover {
   color: gray;
+  text-decoration: underline;
 }
 
 /* Active Header */
@@ -58,7 +59,7 @@ li a:hover {
   margin-bottom: 30%;
 }
 .header_menu ul li a {
-  font-size: 32px;
+  font-size: 30px;
   font-weight: lighter;
 }
 .header_footer {
@@ -558,7 +559,7 @@ li a:hover {
   padding: 4px;
 }
 #footer_logo {
-  height: 60px;
+  height: 40px;
 }
 .outer_icons {
   width: 30%;
@@ -566,6 +567,7 @@ li a:hover {
 .outer_icons div {
   padding-top: 3%;
 }
+
 .outer_icons .outer_icon {
   padding: 1%;
   margin-right: 3%;
