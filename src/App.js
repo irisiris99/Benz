@@ -233,7 +233,7 @@ function HighLight() {
         <div class="new_eqs">
           <div>
             <img src={process.env.PUBLIC_URL + '/imgs/new1.jpg' } />
-            <p>2022 Mercedes-Benz EQS 580 4Matic First Look</p>
+            <p>2022 Mercedes-Benz EQS 580 4Matic</p>
           </div>
           <div>
             <img src={process.env.PUBLIC_URL + '/imgs/new2.jpg' } />
@@ -289,7 +289,7 @@ function Studio() {
         </div>
         <div id="last_content" className="studio_content2">
           <div>
-            <h2>48°08'33.4"N 11°34'38.0"E</h2>
+            <h2 className="delete">48°08'33.4"N 11°34'38.0"E</h2>
             <p>Studio Odeonsplatz</p>
             <p>Brienner Strasse 1</p>
             <p>80333 Munich</p>
@@ -306,7 +306,9 @@ function Studio() {
 
 function MainNews() {
   return (
-    <div className="news">
+    <div className="news" style={{
+      backgroundImage: `url(${process.env.PUBLIC_URL + '/imgs/background6.jpg'})`
+    }}>
       <h1>Live News</h1>
       <div className="news_header">
         <div>
@@ -335,7 +337,7 @@ function MainNews() {
       <div className="news_content">
         <div>
           <img src={process.env.PUBLIC_URL + '/imgs/news6.jpg'}  alt="#" />
-          <p>Laureus Sport Good: Everyone wins.</p>
+          <p>Laureus Sport Good: Everyone wins</p>
         </div>
         <div>
           <img src={process.env.PUBLIC_URL + '/imgs/news7.jpg'}  alt="#" />
@@ -343,17 +345,17 @@ function MainNews() {
         </div>
         <div>
           <img src={process.env.PUBLIC_URL + '/imgs/news8.jpg'}  alt="#" />
-          <p>30 years of Mercedes-Benz W 140...</p>
+          <p>30 years of Mercedes-Benz W 140</p>
         </div>
       </div>
       <div className="news_content">
         <div>
           <img src={process.env.PUBLIC_URL + '/imgs/news9.jpg'}  alt="#" />
-          <p>The New EQS Mercedes-EQ and its...</p>
+          <p>The New EQS Mercedes-EQ and its</p>
         </div>
         <div>
           <img src={process.env.PUBLIC_URL + '/imgs/news10.jpg'}  alt="#" />
-          <p>She's Mercedes:"we should not se our...</p>
+          <p>She's Mercedes:"we should not se our</p>
         </div>
         <div>
           <img src={process.env.PUBLIC_URL + '/imgs/news11.jpg'}  alt="#" />
@@ -452,10 +454,10 @@ function Footer() {
         <p>² Angaben zu Kraftstoffverbrauch, Stromverbrauch und CO₂-Emissionen sind vorläufig und wurden vom Technischen Dienst für das Zertifizierungsverfahren nach Maßgabe des WLTP-Prüfverfahrens ermittelt und in NEFZ-Werte korreliert. Eine EG-Typgenehmigung und Konformitätsbescheinigung mit amtlichen Werten liegen noch nicht vor. Abweichungen zwischen den Angaben und den amtlichen Werten sind möglich.</p>
       </div>
       <div>
-        <p>³ Stromverbrauch und Reichweite wurden auf der Grundlage der VO 692/2008/EG ermittelt. Stromverbrauch und Reichweite sind abhängig von der Fahrzeugkonfiguration. Weitere Informationen zum offiziellen Kraftstoffverbrauch und den offiziellen spezifischen CO₂-Emissionen neuer Personenkraftwagen können dem „Leitfaden über den Kraftstoffverbrauch, die CO₂-Emissionen und den Stromverbrauch aller neuen Personenkraftwagenmodelle“ entnommen werden, der an allen Verkaufsstellen und bei der Deutschen Automobil Treuhand GmbH unter www.dat.de unentgeltlich erhältlich ist.</p>
+        <p className="delete">³ Stromverbrauch und Reichweite wurden auf der Grundlage der VO 692/2008/EG ermittelt. Stromverbrauch und Reichweite sind abhängig von der Fahrzeugkonfiguration. Weitere Informationen zum offiziellen Kraftstoffverbrauch und den offiziellen spezifischen CO₂-Emissionen neuer Personenkraftwagen können dem „Leitfaden über den Kraftstoffverbrauch, die CO₂-Emissionen und den Stromverbrauch aller neuen Personenkraftwagenmodelle“ entnommen werden, der an allen Verkaufsstellen und bei der Deutschen Automobil Treuhand GmbH unter www.dat.de unentgeltlich erhältlich ist.</p>
       </div>
       <div>
-        <p>⁴ Alle technischen Angaben sind vorläufig und wurden intern nach Maßgabe der jeweils anwendbaren Zertifizierungsmethode ermittelt. Es liegen bislang weder bestätigte Werte vom TÜV noch eine EG-Typgenehmigung noch eine Konformitätsbescheinigung mit amtlichen Werten vor. Abweichungen zwischen den Angaben und den amtlichen Werten sind möglich.</p>
+        <p className="delete">⁴ Alle technischen Angaben sind vorläufig und wurden intern nach Maßgabe der jeweils anwendbaren Zertifizierungsmethode ermittelt. Es liegen bislang weder bestätigte Werte vom TÜV noch eine EG-Typgenehmigung noch eine Konformitätsbescheinigung mit amtlichen Werten vor. Abweichungen zwischen den Angaben und den amtlichen Werten sind möglich.</p>
       </div>
     </div>
   )
@@ -512,7 +514,7 @@ function ActiveHeader() {
           <p>MORE INFO :</p>
           <h5>CAREER | CONTACT</h5>
         </div>
-        <div>
+        <div className="block">
           <p>OFFICIAL :</p>
           <a href="https://www.facebook.com/MercedesBenz"><FaFacebook className="outer_icon" /></a>
           <a href="https://twitter.com/mercedesbenz"><FaTwitter className="outer_icon" /></a>
