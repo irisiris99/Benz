@@ -54,8 +54,8 @@ class NewsBtn extends Component {
 
   render() {
     return (
-      <div className="news_icon">
-        <FaAngleDown size="25" color="white" onClick={this.toggleBtn}/>
+      <div>
+        <FaAngleDown className="news_icon" size="25" color="white" onClick={this.toggleBtn}/>
       </div>
     );
   }
@@ -122,7 +122,7 @@ function Header() {
 
 function HeadNews() {
   return (
-    <div>
+    <div id="headnews">
       <div id="head_news">
         <div className="news_title">
           <h3>NEWS</h3>
@@ -274,12 +274,12 @@ function Studio() {
             <h2>ICONS OF LUXURY</h2>
             <p>The Maybach Icons of Luxury collection features exquisite luxury items formed from exclusive, sustainable materials and made by expert craftspeople using a unique fusion of time-tested and innovative handcrafting techniques. At the special Icons of Luxury pop-up, browse and purchase selected items from the collection, such as leather jackets, weekender bags, rollerball pens and eyewear.</p>
           </div>
-          <div>
+          <div className="studio2_img">
             <img src={process.env.PUBLIC_URL + '/imgs/studio4.jpg'}  alt="#"></img>
           </div>
         </div>
-        <div className="studio_content2">
-          <div id="fortune">
+        <div id="middle_content" className="studio_content2">
+          <div id="fortune" className="studio2_img">
             <img src={process.env.PUBLIC_URL + '/imgs/studio5.jpg'}  alt="#"></img>
           </div>
           <div>
@@ -295,7 +295,7 @@ function Studio() {
             <p>80333 Munich</p>
             <h2>Monday to Saturday: 9.00 am – 7.00 pm </h2>
           </div>
-          <div>
+          <div className="studio2_img">
             <img src={process.env.PUBLIC_URL + '/imgs/studio6.jpg'}  alt="#"></img>
           </div>
         </div>
@@ -325,11 +325,11 @@ function MainNews() {
           <img src={process.env.PUBLIC_URL + '/imgs/news3.jpg'}  alt="#" />
           <p>What Impact Does High Altitude Have on a...</p>
         </div>
-        <div>
+        <div className="delete">
           <img src={process.env.PUBLIC_URL + '/imgs/news4.jpg'}  alt="#" />
           <p>Mercedes-EQ and SK Gaming launch Projec...</p>
         </div>
-        <div>
+        <div className="delete">
           <img src={process.env.PUBLIC_URL + '/imgs/news5.jpg'}  alt="#" />
           <p>Mercedes-Benz SL glamour at the Pebble B...</p>
         </div>
@@ -339,11 +339,11 @@ function MainNews() {
           <img src={process.env.PUBLIC_URL + '/imgs/news6.jpg'}  alt="#" />
           <p>Laureus Sport Good: Everyone wins</p>
         </div>
-        <div>
+        <div className="delete">
           <img src={process.env.PUBLIC_URL + '/imgs/news7.jpg'}  alt="#" />
           <p>Interview with Sara Shakeel.</p>
         </div>
-        <div>
+        <div className="delete">
           <img src={process.env.PUBLIC_URL + '/imgs/news8.jpg'}  alt="#" />
           <p>30 years of Mercedes-Benz W 140</p>
         </div>
@@ -353,11 +353,11 @@ function MainNews() {
           <img src={process.env.PUBLIC_URL + '/imgs/news9.jpg'}  alt="#" />
           <p>The New EQS Mercedes-EQ and its</p>
         </div>
-        <div>
+        <div className="delete">
           <img src={process.env.PUBLIC_URL + '/imgs/news10.jpg'}  alt="#" />
           <p>She's Mercedes:"we should not se our</p>
         </div>
-        <div>
+        <div className="delete">
           <img src={process.env.PUBLIC_URL + '/imgs/news11.jpg'}  alt="#" />
           <p>Mercedes-Benz AG: Purpose.</p>
         </div>
@@ -367,11 +367,11 @@ function MainNews() {
           <img src={process.env.PUBLIC_URL + '/imgs/news12.jpg'}  alt="#" />
           <p>Mercedes-Benz C-Class: Learning to let go</p>
         </div>
-        <div>
+        <div className="delete">
           <img src={process.env.PUBLIC_URL + '/imgs/news13.jpg'}  alt="#" />
           <p>Team achieves FIA Three-Star Environment...</p>
         </div>
-        <div>
+        <div className="delete">
           <img src={process.env.PUBLIC_URL + '/imgs/news14.jpg'}  alt="#" />
           <p>On the road with Mercedes-Benz Dream Cars</p>
         </div>
@@ -381,11 +381,11 @@ function MainNews() {
           <img src={process.env.PUBLIC_URL + '/imgs/news15.jpg'}  alt="#" />
           <p>Mercedes Launches ‘Accelerate 25’ Diver...</p>
         </div>
-        <div>
+        <div className="delete">
           <img src={process.env.PUBLIC_URL + '/imgs/news16.jpg'}  alt="#" />
           <p>The Mercedes-AMG GT Roadster.</p>
         </div>
-        <div>
+        <div className="delete">
           <img src={process.env.PUBLIC_URL + '/imgs/news17.jpg'}  alt="#" />
           <p>The Mercedes-AMG GT Coupe.</p>
         </div>
@@ -395,11 +395,11 @@ function MainNews() {
           <img src={process.env.PUBLIC_URL + '/imgs/news18.jpg'}  alt="#" />
           <p>Dare to dream with Mercedes-Benz dream cars.</p>
         </div>
-        <div>
+        <div className="delete">
           <img src={process.env.PUBLIC_URL + '/imgs/news19.jpg'}  alt="#" />
           <p>Our call for diversity, standing against racism...</p>
         </div>
-        <div>
+        <div className="delete">
           <img src={process.env.PUBLIC_URL + '/imgs/news20.jpg'}  alt="#" />
           <p>Mexico 2020:A character-building weekend.</p>
         </div>
@@ -469,7 +469,7 @@ function Outer() {
       <div className="outer_list">
         <img id="footer_logo" src={process.env.PUBLIC_URL + '/imgs/logo.png'} alt="#"></img>
         <ul>
-          <li><a href="">HOME</a></li>
+          <li><a href="index.html">HOME</a></li>
           <li><a href="">Company</a></li>
           <li><a href="">Design</a></li>
           <li><a href="">Inoovation</a></li>
