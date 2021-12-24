@@ -1,9 +1,12 @@
-import React, { Component } from 'react';
+/* eslint-disable */
+import React, { Component, useState } from 'react';
 import './App.css';
+import { useSelector } from 'react-redux';
 import { FaBars, FaAngleDown, FaChargingStation, FaEnvira, FaFacebook, FaTwitter, FaYoutube, FaInstagram, FaLinkedinIn, } from "react-icons/fa";
 
 
 function App() {
+
     return (
       <div className="App">
         <ActiveHeader />
@@ -31,6 +34,8 @@ function App() {
     );
 }
 
+
+
 class HeadBtn extends Component {
   toggleBtn = () => {
     const menu = document.querySelector('.active_header');
@@ -46,6 +51,24 @@ class HeadBtn extends Component {
   }
 }
 
+function Header() {
+
+  const dtd = useSelector((state) => state);
+
+  return (
+    <div className="header">
+      <div className="header_img">
+        <img src={process.env.PUBLIC_URL + '/imgs/header.jpg'} />
+      </div>
+      <div>
+        <a href="index.html"><img className="header_logo" src={process.env.PUBLIC_URL + '/imgs/logo.png'} /></a>
+        <HeadBtn />
+        <p className="header_text">Mercedes-{dtd}</p>
+      </div>
+    </div>
+  )
+}
+
 class NewsBtn extends Component {
   toggleBtn = () => {
     const menu = document.querySelector('#toggle_news');
@@ -59,6 +82,63 @@ class NewsBtn extends Component {
       </div>
     );
   }
+}
+
+function HeadNews() {
+  let [headNews, HeadNews2] = useState([
+    'Mercedes-EQ Formula E Team facing fresh challenges in Season 8',
+    'Mercedes-Benz Collaborates With Proenza Schouler.',
+    'Studio Odeonsplatz by Mercedes-Benz',
+    'SK Gaming runs, Mercedes-Benz doubles.',
+    'League of Legends World Champopmship Ring.']);
+
+  return (
+    <div id="headnews">
+      <div id="head_news">
+        <div className="news_title">
+          <h3>NEWS</h3>
+        </div>
+        <div className="news_content">
+          <p> {headNews[0]} </p>
+        </div>
+        <NewsBtn />
+      </div>
+      <div id="toggle_news">
+        <div className="head_news">
+          <div className="news_title">
+            <h3>NEWS</h3>
+          </div>
+          <div className="news_content">
+            <p> {headNews[1]} </p>
+          </div>
+        </div>
+        <div className="head_news">
+          <div className="news_title">
+            <h3>NEWS</h3>
+          </div>
+          <div className="news_content">
+            <p> {headNews[2]} </p>
+          </div>
+        </div>
+        <div className="head_news">
+          <div className="news_title">
+            <h3>NEWS</h3>
+          </div>
+          <div className="news_content">
+            <p> {headNews[3]} </p>
+          </div>
+        </div>
+        <div className="head_news">
+          <div className="news_title">
+            <h3>NEWS</h3>
+          </div>
+          <div className="news_content">
+            <p> {headNews[4]} </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
 }
 
 class NextBtn extends Component {
@@ -103,71 +183,6 @@ class NextBtn extends Component {
       </div>
     )
   }
-}
-
-function Header() {
-  return (
-    <div className="header">
-      <div className="header_img">
-        <img src={process.env.PUBLIC_URL + '/imgs/header.jpg'} ></img>
-      </div>
-      <div>
-        <a href="index.html"><img className="header_logo" src={process.env.PUBLIC_URL + '/imgs/logo.png'} /></a>
-        <HeadBtn />
-        <p className="header_text">Mercedes-Benz</p>
-      </div>
-    </div>
-  )
-}
-
-function HeadNews() {
-  return (
-    <div id="headnews">
-      <div id="head_news">
-        <div className="news_title">
-          <h3>NEWS</h3>
-        </div>
-        <div className="news_content">
-          <p>Mercedes-EQ Formula E Team facing fresh challenges in Season 8</p>
-        </div>
-        <NewsBtn />
-      </div>
-      <div id="toggle_news">
-        <div className="head_news">
-          <div className="news_title">
-            <h3>NEWS</h3>
-          </div>
-          <div className="news_content">
-            <p>Mercedes-Benz Collaborates With Proenza Schouler.</p>
-          </div>
-        </div>
-        <div className="head_news">
-          <div className="news_title">
-            <h3>NEWS</h3>
-          </div>
-          <div className="news_content">
-            <p>Studio Odeonsplatz by Mercedes-Benz</p>
-          </div>
-        </div>
-        <div className="head_news">
-          <div className="news_title">
-            <h3>NEWS</h3>
-          </div>
-          <div className="news_content">
-            <p>SK Gaming runs, Mercedes-Benz doubles.</p>
-          </div>
-        </div>
-        <div className="head_news">
-          <div className="news_title">
-            <h3>NEWS</h3>
-          </div>
-          <div className="news_content">
-            <p>League of Legends World Champopmship Ring.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  )
 }
 
 function ModelSlider() {
@@ -224,20 +239,25 @@ function Goal() {
 }
 
 function HighLight() {
+  
+  let [Product, Product2] = useState('New Product : The New EQS 2022');
+  let [ProductLeft, ProductLeft2] = useState('2022 Mercedes-Benz EQS 580 4Matic');
+  let [ProductRight, ProductRight2] = useState('2022 Mercedes EQS futuristic interior');
+
   return (
     <div className="highlight" style={{
       backgroundImage: `url(${process.env.PUBLIC_URL + '/imgs/background1.jpg'})`
     }}>
       <div className="product">
-        <h2>New Product : The New EQS 2022</h2>
+        <h2>{ Product }</h2>
         <div class="new_eqs">
           <div>
             <img src={process.env.PUBLIC_URL + '/imgs/new1.jpg' } />
-            <p>2022 Mercedes-Benz EQS 580 4Matic</p>
+            <p>{ ProductLeft }</p>
           </div>
           <div>
             <img src={process.env.PUBLIC_URL + '/imgs/new2.jpg' } />
-            <p>2022 Mercedes EQS futuristic interior</p>
+            <p>{ ProductRight }</p>
           </div>
         </div>
       </div>
@@ -305,6 +325,9 @@ function Studio() {
 }
 
 function MainNews() {
+
+  let [MainNews, NewsChange] = useState(['SK Gaming runs, Mercedes-Benz doubles.','More equal opportunities and inclusion..'])
+
   return (
     <div className="news" style={{
       backgroundImage: `url(${process.env.PUBLIC_URL + '/imgs/background6.jpg'})`
@@ -313,11 +336,11 @@ function MainNews() {
       <div className="news_header">
         <div>
           <img src={process.env.PUBLIC_URL + '/imgs/news1.jpg'}  alt="#" />
-          <h4>SK Gaming runs, Mercedes-Benz doubles.</h4>
+          <h4>{ MainNews[0] }</h4>
         </div>
         <div>
           <img src={process.env.PUBLIC_URL + '/imgs/news2.jpg'}  alt="#" />
-          <h4>More equal opportunities and inclusion..</h4>
+          <h4>{ MainNews[1] }</h4>
         </div>
       </div>
       <div className="news_content">
