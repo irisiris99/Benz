@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/Benz/static/css/main.fb68b2c5.chunk.css",
-    "main.js": "/Benz/static/js/main.bd180256.chunk.js",
-    "main.js.map": "/Benz/static/js/main.bd180256.chunk.js.map",
-    "runtime-main.js": "/Benz/static/js/runtime-main.28723c3b.js",
-    "runtime-main.js.map": "/Benz/static/js/runtime-main.28723c3b.js.map",
-    "static/js/2.662b3fd5.chunk.js": "/Benz/static/js/2.662b3fd5.chunk.js",
-    "static/js/2.662b3fd5.chunk.js.map": "/Benz/static/js/2.662b3fd5.chunk.js.map",
-    "static/js/3.3c12d757.chunk.js": "/Benz/static/js/3.3c12d757.chunk.js",
-    "static/js/3.3c12d757.chunk.js.map": "/Benz/static/js/3.3c12d757.chunk.js.map",
+    "main.js": "/Benz/static/js/main.51d0caec.chunk.js",
+    "main.js.map": "/Benz/static/js/main.51d0caec.chunk.js.map",
+    "runtime-main.js": "/Benz/static/js/runtime-main.d42455e9.js",
+    "runtime-main.js.map": "/Benz/static/js/runtime-main.d42455e9.js.map",
+    "static/js/2.842b8a18.chunk.js": "/Benz/static/js/2.842b8a18.chunk.js",
+    "static/js/2.842b8a18.chunk.js.map": "/Benz/static/js/2.842b8a18.chunk.js.map",
+    "static/js/3.a81abb2d.chunk.js": "/Benz/static/js/3.a81abb2d.chunk.js",
+    "static/js/3.a81abb2d.chunk.js.map": "/Benz/static/js/3.a81abb2d.chunk.js.map",
     "index.html": "/Benz/index.html",
     "static/css/main.fb68b2c5.chunk.css.map": "/Benz/static/css/main.fb68b2c5.chunk.css.map",
-    "static/js/2.662b3fd5.chunk.js.LICENSE.txt": "/Benz/static/js/2.662b3fd5.chunk.js.LICENSE.txt"
+    "static/js/2.842b8a18.chunk.js.LICENSE.txt": "/Benz/static/js/2.842b8a18.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.28723c3b.js",
-    "static/js/2.662b3fd5.chunk.js",
+    "static/js/runtime-main.d42455e9.js",
+    "static/js/2.842b8a18.chunk.js",
     "static/css/main.fb68b2c5.chunk.css",
-    "static/js/main.bd180256.chunk.js"
+    "static/js/main.51d0caec.chunk.js"
   ]
 }
