@@ -250,7 +250,7 @@ function HighLight() {
     }}>
       <div className="product">
         <h2>{ Product }</h2>
-        <div class="new_eqs">
+        <div className="new_eqs">
           <div>
             <img src={process.env.PUBLIC_URL + '/imgs/new1.jpg' } />
             <p>{ ProductLeft }</p>
