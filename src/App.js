@@ -152,19 +152,19 @@ class NextBtn extends Component {
     const slide = document.querySelector('.model_slide');
 
     s680.addEventListener('click', () => {
-      slide.style.transform = 'translateX(-16.1%)';
+      slide.style.transform = 'translateX(-78vw)';
     })
     s580.addEventListener('click', () => {
-      slide.style.transform = 'translateX(-32.2%)';
+      slide.style.transform = 'translateX(-156vw)';
     })
     eqs580.addEventListener('click', () => {
-      slide.style.transform = 'translateX(-48.3%)';
+      slide.style.transform = 'translateX(-234vw)';
     })  
     c300.addEventListener('click', () => {
-      slide.style.transform = 'translateX(-64.4%)';
+      slide.style.transform = 'translateX(-312vw)';
     })
     amg.addEventListener('click', () => {
-      slide.style.transform = 'translateX(-80.5%)';
+      slide.style.transform = 'translateX(-390vw)';
     })
     avtr.addEventListener('click', () => {
       slide.style.transform = 'translateX(0%)';

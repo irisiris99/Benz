@@ -91,14 +91,17 @@ li a:hover {
 }
 
 /* Header */
+
 .header_img {
   width: 100%;
-  height: 100vh;
   position: fixed;
   top: 0;
   left: 0;
   z-index: -1;
   overflow: hidden;
+}
+.header_img img {
+  height: 100vh;
 }
 .header_icon {
   position: fixed;
@@ -201,7 +204,7 @@ li a:hover {
   margin-top: 5%;
 }
 .model_slide {
-  width: 518%;
+  width: 490vw;
   display: flex;
   justify-content: center;
   align-items: center;
