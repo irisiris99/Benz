@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Benz/static/css/main.88efd169.chunk.css",
+    "main.css": "/Benz/static/css/main.c95a0530.chunk.css",
     "main.js": "/Benz/static/js/main.4641eb71.chunk.js",
     "main.js.map": "/Benz/static/js/main.4641eb71.chunk.js.map",
     "runtime-main.js": "/Benz/static/js/runtime-main.d42455e9.js",
@@ -10,13 +10,13 @@
     "static/js/3.a81abb2d.chunk.js": "/Benz/static/js/3.a81abb2d.chunk.js",
     "static/js/3.a81abb2d.chunk.js.map": "/Benz/static/js/3.a81abb2d.chunk.js.map",
     "index.html": "/Benz/index.html",
-    "static/css/main.88efd169.chunk.css.map": "/Benz/static/css/main.88efd169.chunk.css.map",
+    "static/css/main.c95a0530.chunk.css.map": "/Benz/static/css/main.c95a0530.chunk.css.map",
     "static/js/2.842b8a18.chunk.js.LICENSE.txt": "/Benz/static/js/2.842b8a18.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.d42455e9.js",
     "static/js/2.842b8a18.chunk.js",
-    "static/css/main.88efd169.chunk.css",
+    "static/css/main.c95a0530.chunk.css",
     "static/js/main.4641eb71.chunk.js"
   ]
 }
